@@ -10,7 +10,7 @@ Connect your Xteink. The app identifies it, keeps a backup, and installs the mat
 
 1. Connect the reader with a USB **data** cable.
 2. Open **Library Reader Setup** and choose **Check reader**.
-3. Choose **Back up and install**. Wait for **Reader ready**.
+3. Choose **Back up and install**. Wait for **Library is ready**.
 
 No Python or terminal is needed. Then connect the reader to Wi-Fi and use **E-readers** in the Library phone app to link it.
 
