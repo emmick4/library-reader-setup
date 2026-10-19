@@ -8,16 +8,19 @@ The build collects the exact installed dependency license texts and versions int
 the app's `library_installer/resources/licenses` directory, including CPython's
 license. Qt libraries remain separate shared libraries in the application bundle.
 The Qt wheels omit their full component attribution texts. The packaging license
-directory therefore retains 236 original license/copyright/attribution files from
-the exact hash-pinned Qt6.12.0/PySide source archives. Their provenance binds every
-file and all four source archives; the build checks them and Qt's runtime version
-before copying. Matching full sources can be included in the source companion.
+directory therefore retains original license/copyright/attribution files from
+the exact hash-pinned Qt/PySide source archives. Mac uses Qt/PySide 6.9.3;
+Windows uses 6.12.0. Their provenance binds the retained files and source archives;
+the build checks them and Qt's runtime version before copying. The source companion
+contains both platform versions, with maps for reconstructing each installer.
+The Mac package also retains CPython 3.13.3's original incorporated-software notices
+and corresponding source.
 
 | Component | Pinned version | License / upstream source |
 |---|---|---|
 | esptool | 5.6.0 | GPL-2.0-or-later; <https://github.com/espressif/esptool/tree/v5.6.0> |
-| PySide6-Essentials and shiboken6 | 6.12.0 | LGPL-3.0 / GPL / Qt commercial terms; <https://code.qt.io/cgit/pyside/pyside-setup.git/> |
-| Qt runtime | 6.12.0 | Module-specific licenses retained from the wheel; <https://code.qt.io/cgit/qt/> |
+| PySide6-Essentials and shiboken6 | Mac 6.9.3; Windows 6.12.0 | LGPL-3.0 / GPL / Qt commercial terms; <https://code.qt.io/cgit/pyside/pyside-setup.git/> |
+| Qt runtime | Mac 6.9.3; Windows 6.12.0 | Module-specific licenses and upstream notices retained; <https://code.qt.io/cgit/qt/> |
 | PyInstaller | 6.22.3 | GPL-2.0-or-later with bootloader exception; <https://github.com/pyinstaller/pyinstaller/tree/v6.22.3> |
 | pyserial | 3.5 | BSD-3-Clause; <https://github.com/pyserial/pyserial/tree/v3.5> |
 | Library firmware / CrossInk | release manifest | Preserve its source archive, upstream commit/submodules, patch, SDK/font notices and build provenance. |
