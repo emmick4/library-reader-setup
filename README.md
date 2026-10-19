@@ -11,8 +11,10 @@ Connect your Xteink. The app identifies it, keeps a backup, and installs the mat
 1. Connect the reader with a USB **data** cable.
 2. Open **Library Reader Setup** and choose **Check reader**.
 3. Choose **Back up and install**. Wait for **Library is ready**.
+4. Connect the reader to Wi-Fi. Its Library QR code appears automatically.
+5. On your phone, open **Library → Books → E-readers → Connect an e-reader**. Scan the QR code and tap **Add reader**.
 
-No Python or terminal is needed. Connect the reader to Wi-Fi, scan its QR code with your phone, and tap **Add reader**. Updating a connected reader keeps its pairing.
+No Python or terminal is needed. Updating a connected reader keeps its pairing. To connect it again, open **Settings → System → Connect to Library** on the reader.
 
 The app recognizes **X4 Pro**, **X4 Classic**, and the **original X4** automatically. You never select a model or firmware file. Unrecognized firmware stops safely without flash writes.
 
